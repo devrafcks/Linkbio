@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinkBio Rafael</title>
+    <title>linkbio rafcks</title>
 
     <!-- Estilos externos -->
     <link rel="stylesheet" href="css/styles.css">
@@ -15,65 +15,81 @@
 </head>
 
 <body>
-    <!-- Cabeçalho com informações do usuário -->
-    <header class="info-user">
-        <div class="img-user">
-            <img src="image/user.png" alt="Imagem do Rafael Henrique">
-        </div>
-        <div class="name-user">
-            <h1>Rafael Henrique</h1>
-            <p>@rafaxsz.log</p>
-        </div>
-        <div class="info-icon">
-            <img src="image/complemento.jpg" alt="Ícone complementar">
-        </div>
-    </header>
 
-    <!-- Principal -->
-    <main>
-        <!-- Mensagem de destaque -->
-        <section class="cta-info">
-            <p>Seja a <span class="destaque">mudança</span> que você deseja ver no mundo.</p>
-        </section>
+    <!-- Container principal -->
+    <div class="container">
+        <div class="content">
 
-        <!-- Links e redes sociais -->
-        <section class="links">
-            <div class="site">
-                <h2>Meu cantinho na web</h2>
-                <p>Vem dar uma olhada nos projetos que ando criando.</p>
+            <!-- WIDGET 1: Informações do usuário -->
+            <div class="widget1">
+                <div class="info-user">
+                    <div class="img-user">
+                        <img src="image/user.png" alt="Imagem do usuário">
+                    </div>
+                    <div class="name-user">
+                        <h1>Rafael Henrique</h1>
+                        <span>@rafaxsz.log
+                        </span>
+                    </div>
+                </div>
+                <div class="info-icon">
+                    <img src="image/complemento.jpg" alt="Ícone complementar">
+                </div>
             </div>
 
-            <nav class="redes-sociais">
-                <ul>
-                    <li><a class="box-social linkedin" href="https://www.linkedin.com/in/rafael-henrique-blanco-0455b12a6/" target="_blank" aria-label="LinkedIn">
+            <!-- WIDGET 2: Informações CTA -->
+            <div class="widget2">
+                <div class="cta-info">
+                    <span>Seja a   <span class="destaque"> mudança </span><br>que você deseja ver no mundo.</span>
+                </div>
+            </div>
+
+            <!-- WIDGET 3: Redes sociais e link do site -->
+            <div class="widget3">
+                <!-- Link do site -->
+                <a  class="site">
+                    <div class="text-site">
+                        <h1>Meu cantinho na web</h1>
+                        <span>Vem dar uma olhada nos projetos que ando criando</span>
+                    </div>
+                    
+                </a>
+
+                <!-- Redes sociais -->
+                <div class="redes-sociais">
+                    <!-- linkedin -->
+                    <a class="box-social linkedin" href="https://www.linkedin.com/in/rafael-henrique-blanco-0455b12a6/" target="_blank">
                         <i class="fab fa-linkedin"></i>
-                    </a></li>
-                    <li><a class="box-social github" href="https://github.com/devrafcks" target="_blank" aria-label="GitHub">
+                    </a>
+
+                    <!-- github -->
+                    <a class="box-social github" href="https://github.com/devrafcks" target="_blank">
                         <i class="fab fa-github"></i>
-                    </a></li>
-                    <li><a class="box-social spotify" href="https://open.spotify.com/user/rafcksps?si=f19832dc2ef54e13" target="_blank" aria-label="Spotify">
+                    </a>
+
+                    <!-- Spotify -->
+                    <a class="box-social spotify" href="https://open.spotify.com/user/rafcksps?si=f19832dc2ef54e13" target="_blank">
                         <i class="fab fa-spotify"></i>
-                    </a></li>
-                    <li><a class="box-social mail" href="mailto:rafcksps@gmail.com" target="_blank" aria-label="E-mail">
+                    </a>
+
+                    <!-- Email -->
+                    <a class="box-social mail" href="mailto:rafcksps@gmail.com" target="_blank">
                         <i class="fas fa-envelope"></i>
-                    </a></li>
-                </ul>
-            </nav>
-        </section>
+                    </a>
+                </div>
+            </div>
 
-        <!-- Embeds do Spotify -->
-        <section class="spotify-embeds">
-            <h2>Minhas playlists e álbuns favoritos:</h2>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3mH6qwIy9crq0I9YQbOuDf?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0OTRd577BEHU8WNfrJ24aB?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2Vg8YkTkuG4Y9MD4hB4KNN?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </section>
-    </main>
+            <!-- WIDGET 5: Embeds do Spotify -->
+            <div class="widget5">
+                <span>Minhas playlists e álbuns favoritos:</span>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2025 Rafael Henrique. Todos os direitos reservados.</p>
-    </footer>
+                <!-- EMBED 1: Playlist do Spotify -->
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3mH6qwIy9crq0I9YQbOuDf?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0OTRd577BEHU8WNfrJ24aB?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2Vg8YkTkuG4Y9MD4hB4KNN?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
