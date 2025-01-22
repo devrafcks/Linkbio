@@ -33,13 +33,13 @@ a {
 .container {
     display: inline;
     border-radius: 20px;
-    width: 95%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 440px;
     background-color: var(--color-black);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: .8rem;
+    padding: .1rem;
 }
 
 .content {
