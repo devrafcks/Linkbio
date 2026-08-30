@@ -4,29 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Link in bio de Rafael Henrique: portfolio, redes sociais e playlists favoritas.">
     <title>Dev Rafcks</title>
 
-    <!-- Estilos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://open.spotify.com">
+
+    <link rel="preload" as="image" href="image/user.png" fetchpriority="high">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- Favicon -->
     <link rel="icon" href="/image/favicon.ico" type="image/x-icon">
-
-
 </head>
 
 <body>
 
-    <!-- Container principal -->
     <div class="container">
         <div class="content">
 
-            <!-- WIDGET 1: Informações do usuário -->
             <div class="widget1">
                 <div class="info-user">
                     <div class="img-user">
-                        <img src="image/user.png" alt="Imagem do usuário">
+                        <img src="image/user.png" alt="Imagem do usuário" width="405" height="616" fetchpriority="high" decoding="async">
                     </div>
                     <div class="name-user">
                         <h1>Rafael Henrique</h1>
@@ -35,21 +37,18 @@
                     </div>
                 </div>
                 <div class="info-icon">
-                    <img src="image/complemento.jpg" alt="Ícone complementar">
+                    <img src="image/complemento.jpg" alt="Ícone complementar" width="1078" height="1080" loading="lazy" decoding="async">
                 </div>
             </div>
 
-            <!-- WIDGET 2: Informações CTA -->
             <div class="widget2">
                 <div class="cta-info">
                     <span>Seja a   <span class="destaque"> mudança </span><br>que você deseja ver no mundo.</span>
                 </div>
             </div>
 
-            <!-- WIDGET 3: Redes sociais e link do site -->
             <div class="widget3">
-                <!-- Link do site -->
-                <a class="site" href="https://rafaelblanco.vercel.app/" target="">
+                <a class="site" href="https://rafaelblanco.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <div class="img-site">
                         <div class="text-site">
                             <h1>Meu portfolio</h1>
@@ -58,35 +57,28 @@
                     </div>
                 </a>
 
-                <!-- Redes sociais -->
                 <div class="redes-sociais">
-                    <!-- linkedin -->
-                    <a class="box-social linkedin" href="https://www.linkedin.com/in/rafael-henrique-blanco-0455b12a6/" target="_blank">
+                    <a class="box-social linkedin" href="https://www.linkedin.com/in/rafael-henrique-blanco-0455b12a6/" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-linkedin"></i>
                     </a>
 
-                    <!-- github -->
-                    <a class="box-social github" href="https://github.com/devrafcks" target="_blank">
+                    <a class="box-social github" href="https://github.com/devrafcks" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
                     </a>
 
-                    <!-- Spotify -->
-                    <a class="box-social spotify" href="https://open.spotify.com/user/rafcksps?si=f19832dc2ef54e13" target="_blank">
+                    <a class="box-social spotify" href="https://open.spotify.com/user/rafcksps?si=f19832dc2ef54e13" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-spotify"></i>
                     </a>
 
-                    <!-- Email -->
-                    <a class="box-social mail" href="mailto:rafcksps@gmail.com" target="_blank">
+                    <a class="box-social mail" href="mailto:rafcksps@gmail.com" target="_blank" rel="noopener noreferrer">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>
 
-            <!-- WIDGET 5: Embeds do Spotify -->
             <div class="widget5">
                 <span>Minhas músicas e álbuns favoritos:</span>
 
-                <!-- EMBED 1: Playlist do Spotify -->
                 <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/23dvrzjnaVoD2cUdoPLbo9?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/5sjDYH0h22YYNEWiRw9IH5?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/2Qt8Z1LB3Fsrf6nhBNsvUJ?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -96,4 +88,3 @@
 </body>
 
 </html>
-

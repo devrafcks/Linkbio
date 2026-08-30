@@ -22,14 +22,12 @@ a {
     text-decoration: none;
 }
 
-/* Variaveis Globais*/
 :root {
-    --color-destaque: #1DB954; /* Spotify Green */
-    --color-black: #191414; /* Spotify Black */
-    --color-white: #FFFFFF; /* White */
+    --color-destaque: #1DB954;
+    --color-black: #191414;
+    --color-white: #FFFFFF;
 }
 
-/* Container principal */
 .container {
     display: inline;
     border-radius: 20px;
@@ -51,20 +49,21 @@ a {
     gap: 1rem;
 }
 
-/* WIDGET 1: Informações do usuário */
 .widget1 {
     width: 100%;
-    height: 16%;
+    height: 60px;
     background-color: var(--color-black);
     border-radius: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    transition: transform 0.3s ease;
 }
 
 .widget1 img {
     width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
@@ -106,11 +105,11 @@ a {
 
 .info-icon img {
     width: 100%;
+    height: auto;
     border-radius: 50%;
     animation: rotate 5s linear infinite;
 }
 
-/* WIDGET 2: Informações CTA2 */
 .widget2 {
     width: 100%;
     height: 16%;
@@ -141,9 +140,7 @@ a {
     padding-bottom: 0.3rem;
 }
 
-/* WIDGET 3: Redes sociais e link do site */
 .widget3 {
-    height: 100%;
     height: 32%;
     border-radius: 12px;
     display: flex;
@@ -163,12 +160,17 @@ a {
 }
 
 .text-site {
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    visibility: visible;
     margin-top: .6em;
     padding: 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .text-site h1 {
@@ -192,6 +194,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 8px;
+    filter: hue-rotate(90deg);
     transition: filter 0.3s ease-in-out;
 }
 
@@ -207,19 +210,6 @@ a {
     transition: background 0.4s ease-in-out;
 }
 
-.img-site {
-    filter: hue-rotate(90deg); 
-}
-
-.text-site {
-    position: relative;
-    z-index: 2;
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-
-/* Redes sociais */
 .redes-sociais {
     border-radius: 12px;
     width: 50%;
@@ -245,28 +235,25 @@ a {
 .redes-sociais i {
     font-size: 2.8rem;
     color: var(--color-white);
+    transition: color 0.3s ease;
 }
+
 .redes-sociais .linkedin:hover i {
     color: #0077b5;
-    transition: color 0.3s;
 }
 
 .redes-sociais .github:hover i {
     color: #595858;
-    transition: color 0.3s;
 }
 
 .redes-sociais .spotify:hover i {
     color: #4add06;
-    transition: color 0.3s;
 }
 
 .redes-sociais .mail:hover i {
     color: #b65454;
-    transition: color 0.3s;
 }
 
-/* WIDGET 4: Call to action adicional */
 .widget4 {
     width: 100%;
     height: 16%;
@@ -299,7 +286,6 @@ a {
     color: var(--color-white);
 }
 
-/* WIDGET 5: Embeds do Spotify */
 .widget5 {
     width: 100%;
     height: 32%;
@@ -312,26 +298,16 @@ a {
 }
 
 .widget5 span {
-    color:var(--color-destaque);
+    color: var(--color-destaque);
     font-size: 1rem;
     padding-top: 1rem;
 }
 
-/* ANIMAÇÕES */
-.widget1,
 .widget2,
 .site,
 .box-social,
 .widget4 {
     transition: transform 0.3s ease;
-}
-
-.widget1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 60px;
 }
 
 .widget1:hover,
@@ -353,6 +329,7 @@ a {
 }
 
 @keyframes pulse {
+
     0%,
     100% {
         transform: scale(1);
@@ -360,5 +337,13 @@ a {
 
     50% {
         transform: scale(1.1);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
     }
 }
