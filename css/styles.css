@@ -86,33 +86,34 @@ img {
 .widget1 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
 }
 
 .info-user {
     min-width: 0;
     display: flex;
     align-items: center;
-    gap: 0.8rem;
+    gap: 0.35rem;
 }
 
 .img-user {
     flex: none;
-    width: 104px;
-    height: 104px;
-    border-radius: 16px;
-    overflow: hidden;
-    background: var(--ember);
-    box-shadow: 0 12px 28px rgba(255, 127, 26, 0.22);
+    display: grid;
+    place-items: center;
+    width: 140px;
+    height: 140px;
 }
 
 .img-user img {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 92px;
+    height: 92px;
     object-fit: contain;
-    object-position: center;
+    object-position: center center;
+    border-radius: 18px;
+    background: var(--ember);
+    box-shadow: 0 12px 28px rgba(255, 127, 26, 0.22);
+    transform-origin: center;
+    animation: rotate 5s linear infinite;
 }
 
 .name-user {
@@ -122,11 +123,21 @@ img {
 .name-user h1 {
     display: flex;
     flex-direction: column;
+    gap: 0.14rem;
     font-family: var(--font-display);
     font-weight: 900;
-    font-size: 1.48rem;
-    line-height: 0.88;
-    letter-spacing: -0.05em;
+    font-size: 1.85rem;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+}
+
+.given,
+.family {
+    display: block;
+    font-size: 1em;
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
 }
 
 .given {
@@ -134,15 +145,14 @@ img {
 }
 
 .family {
-    color: transparent;
-    -webkit-text-stroke: 1.7px var(--paper);
-    paint-order: stroke fill;
+    color: var(--paper);
 }
 
 .role {
-    margin-top: 0.45rem;
+    margin-top: 0.55rem;
     color: var(--cream);
-    font-size: 0.72rem;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
     font-weight: 500;
     line-height: 1.35;
 }
@@ -151,27 +161,16 @@ img {
     display: inline-block;
     margin-top: 0.2rem;
     border-radius: 999px;
-    color: rgba(255, 246, 224, 0.78);
+    color: var(--cream);
     font-family: var(--font-label);
-    font-size: 0.78rem;
+    font-size: 0.9rem;
     font-weight: 500;
+    line-height: 1.3;
     letter-spacing: 0.01em;
 }
 
 .handle:hover {
     color: var(--sun);
-}
-
-.info-icon {
-    flex: none;
-    align-self: center;
-}
-
-.info-icon img {
-    display: block;
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
 }
 
 .widget2 {
@@ -407,15 +406,29 @@ a:focus-visible,
     color: var(--sun);
 }
 
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 @media (max-width: 360px) {
     .img-user {
-        width: 88px;
-        height: 88px;
-        border-radius: 18px;
+        width: 126px;
+        height: 126px;
+    }
+
+    .img-user img {
+        width: 82px;
+        height: 82px;
     }
 
     .name-user h1 {
-        font-size: 1.28rem;
+        font-size: 1.6rem;
     }
 
     .redes-sociais {
@@ -433,5 +446,9 @@ a:focus-visible,
         animation-iteration-count: 1 !important;
         transition-duration: 0.001ms !important;
         scroll-behavior: auto !important;
+    }
+
+    .img-user img {
+        animation: none;
     }
 }
