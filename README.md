@@ -2,23 +2,24 @@
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Font Awesome](https://img.shields.io/badge/Font%20Awesome-528DD7?style=for-the-badge&logo=fontawesome&logoColor=white)
 ![Spotify](https://img.shields.io/badge/Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white)
 
 <p align="center">
-  <img src="image/user.png" alt="Rafael Henrique" width="160">
+  <img src="image/rafael.webp" alt="Rafael Blanco" width="160">
 </p>
 
 ## Sobre
 
-Linkbio é uma página pessoal estilo "link in bio" para o Rafael Henrique. Reúne, em um único lugar, um cartão de apresentação, uma frase de destaque, o link do portfólio, os principais perfis (LinkedIn, GitHub, Spotify e e-mail) e embeds de playlists/álbuns favoritos do Spotify.
+Link na bio de Rafael Blanco, desenvolvedor full stack em São Paulo. Reúne, em um único lugar, o cartão de apresentação, uma frase de destaque, o link do portfólio, os perfis (LinkedIn, GitHub, Spotify e e-mail) e os embeds de músicas e álbuns favoritos no Spotify.
+
+Página publicada: https://devrafcks.github.io/Linkbio/
 
 ## Tecnologias
 
 - HTML5
-- CSS3 (variáveis, Flexbox e animações)
-- Font Awesome (ícones)
-- Google Fonts (Roboto)
+- CSS3
+- Ícones Tabler (SVG)
+- Google Fonts (Unbounded 900 e Montserrat)
 - Spotify Embed
 
 ## Estrutura
@@ -26,20 +27,27 @@ Linkbio é uma página pessoal estilo "link in bio" para o Rafael Henrique. Reú
 ```
 .
 ├── index.html
+├── site.webmanifest
 ├── css/
 │   └── styles.css
 └── image/
-    ├── bg.png
-    ├── complemento.jpg
-    ├── favicon.ico
-    └── user.png
+    ├── rafael.webp
+    ├── og.webp
+    ├── icon.svg
+    ├── icon-192.png
+    ├── icon-512.png
+    ├── apple-touch-icon.png
+    └── favicon.ico
 ```
 
 ## Como usar
 
-Basta abrir o arquivo `index.html` em um navegador, ou servir a pasta com qualquer servidor estático.
+Abra o arquivo `index.html` em um navegador, ou sirva a pasta com qualquer servidor estático.
 
 ## Links
 
 - Portfólio: https://rafaelblanco.vercel.app/
 - GitHub: https://github.com/devrafcks
+- LinkedIn: https://www.linkedin.com/in/rafael-henrique-blanco-0455b12a6/
+- Spotify: https://open.spotify.com/user/rafcksps
+- E-mail: rafcksps@gmail.com
