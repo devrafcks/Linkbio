@@ -182,11 +182,9 @@ img {
 }
 
 .info-icon img {
-    width: 45px;
-    height: 45px;
+    width: 100%;
+    height: auto;
     border-radius: 50%;
-    object-fit: cover;
-    object-position: center 38%;
     animation: rotate 5s linear infinite;
 }
 
